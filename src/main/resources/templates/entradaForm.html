@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th=http://www.thymeleaf.org
+      xmlns:sec=http://www.thymeleaf.org/extras/spring-security
+      xmlns:shiro=http://www.pollix.at/thymeleaf/shiro>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Entrada</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="jumbotron mt-5">
+            <h1>ENTRADA DE VEÍCULO</h1>
+            <p>Digite as informações para dar entrada ao veículo.</p>
+        </div>
+    </div>
+    <form action="#" th:action="@{/entradaForm}" th:object="${movimentoDTO}" method="post">
+        <p>Placa: <input type="text" th:field="*{placa}" /></p>
+        <p>Modelo: <input type="text" th:field="*{modelo}" /></p>
+        <button type="submit" class="btn btn-primary">SALVAR ENTRADA</button>
+    </form>
+</body>
+</html>

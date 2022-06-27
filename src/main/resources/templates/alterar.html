@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th=http://www.thymeleaf.org
+      xmlns:sec=http://www.thymeleaf.org/extras/spring-security
+      xmlns:shiro=http://www.pollix.at/thymeleaf/shiro>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Alterar</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="jumbotron mt-5">
+        <h1>ALTERAR VEÍCULO</h1>
+        <p>Digite as informações para dar entrada ao veículo.</p>
+    </div>
+
+    <form>
+        <div>
+            <label>Placa:</label>
+            <input type="text" />
+        </div>
+        <div>
+            <label>Modelo:</label>
+            <input type="text" />
+        </div>
+        <button type="submit">CONFIRMAR ALTERAÇÃO</button>
+    </form>
+    <a href="/home" class="btn btn-primary mr-3">VOLTAR</a>
+</div>
+</body>
+</html>

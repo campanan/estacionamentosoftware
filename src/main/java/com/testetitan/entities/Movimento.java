@@ -1,10 +1,10 @@
 package com.testetitan.entities;
 
-import com.sun.istack.NotNull;
 import lombok.*;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
@@ -20,9 +20,12 @@ public class Movimento {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-
+    @NotNull
+    @NotEmpty
     private String placa;
 
+    @NotNull
+    @NotEmpty
     private String modelo;
 
     @Column(name="data_entrada")

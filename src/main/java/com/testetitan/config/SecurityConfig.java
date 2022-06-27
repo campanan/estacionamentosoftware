@@ -25,7 +25,7 @@ public class SecurityConfig  {
     @Bean
     @Order(SecurityProperties.BASIC_AUTH_ORDER)
     SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
-        http.authorizeRequests().anyRequest().authenticated().and().formLogin().defaultSuccessUrl("/estacionamento").and().httpBasic();
+        http.csrf().disable().authorizeRequests().anyRequest().authenticated().and().formLogin().defaultSuccessUrl("/home").and().httpBasic();
         return http.build();
     }
 
