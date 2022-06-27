@@ -46,4 +46,4 @@ Após isso inicializar a aplicação via IDE. Posteriormente iremos conteineriza
 
 ###Futuras Implementações
 
-Inicialmente não foi implementado testes unitários, e tratamento para excecções como tentar inserir valores em branco para o sistema, devido a utilização do Thymeleaf, os primeiros tratamentos que foram realizados para a API não cumprem o papel de impedir a requisição do cliente. 
+Inicialmente não foi implementado testes unitários, e tratamento para excecções como tentar inserir valores em branco para o sistema, devido a utilização do Thymeleaf, os primeiros tratamentos que foram realizados para a API não cumprem o papel de impedir a requisição do cliente. A view de alterar também está inativa e será atualizado em breve no repositório.
