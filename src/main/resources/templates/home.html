@@ -35,7 +35,7 @@
                     </td>
                     <td>
                         <div class="d-flex d-justify-content-center">
-                            <a href="/home/alterar" class="btn btn-warning mr-3">ALTERAR</a>
+                            <a th:href="@{/alterar/{id}(id = ${movimento.id})}" class="btn btn-primary mr-3">ALTERAR CARRO</a>
                         </div>
                     </td>
                 </tr>

@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -29,6 +30,11 @@ public class MovimentoService {
     public Movimento findByPlaca(String placa){
 
         return movimentoRepository.findByPlaca(placa);
+    }
+
+    public Movimento findById(Integer id){
+        Movimento movimento = movimentoRepository.findById(id).orElse(null);
+        return movimento;
     }
 
     public List<Movimento> listParkedCars(){
